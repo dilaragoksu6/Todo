@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;1,300&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="logo">
+            <h1>TO-DO</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home Page</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </nav>
+    <div class="sidebar">
+        <ul class="sidebar-links">
+            <li><a href="#">Documents</a></li>
+            <li><a href="#">Persons</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="ToDo-List">
+            <h2>To-Do List <img src="images/list.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">task1</li>
+                <li>task2</li>
+             <li>task2</li> -->
+
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>ABOUT US</h2>
+                <p>Developed by Dilara Göksu in 2023.</p>
+            </div>
+            <div class="footer-section col">
+                <h4 class="text-uppercase">
+                    AROUND THE WEB
+                </h4>
+                <ul>
+                    <li>
+                        <a href="#" class="btn btn-outline btn-social">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-outline btn-social">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-outline btn-social">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-outline btn-social">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="footer-section col">
+                <h4 class="text-uppercase">
+                    LOCATION
+                </h4>
+                <p>Yeşilköy, Atatürk caddesi No:10 / 2 / 235, 34912 Bakirköy/İstanbul</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 TO-DO. All rights reserved.
+        </div>
+    </footer>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
